@@ -1,0 +1,131 @@
+/* style.css */
+
+/* Main container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #C3DEEF;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Content container */
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+}
+
+/* Image styles */
+.image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Text container */
+.text-container {
+    flex: 1; /* Allow the text container to take up remaining space */
+}
+
+/* Title styles */
+.title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.genres {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px; /* Adjust as needed */
+    font-family: 'Open Sans', sans-serif; /* Example font */
+}
+
+.language{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px; /* Adjust as needed */
+    font-family: 'Open Sans', sans-serif; /* Example font */
+}
+
+
+/* Summary styles */
+.summary {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    animation: scaleIn 1s ease-in-out;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Button styles */
+
+/* Button styles */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px; /* Increased padding for better button size */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none; /* Remove underline */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles specifically for the button inside the link */
+.button-link {
+    text-decoration: none; /* Remove underline */
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

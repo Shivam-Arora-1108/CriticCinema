@@ -1,0 +1,110 @@
+.movie-poster{
+    width: 200px;
+    height: 300px;
+}
+
+.banner-outer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    background-color: #c3deef;
+    color: black !important;
+}
+
+.main-screen{
+    padding: 0px;
+}
+
+.banner-inner-movie-tile{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=string]{
+    width: 60%;
+    margin-right: 50px;
+    border: none;
+    border-bottom: 3px solid #50809d;
+    color: #50809d;
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type=string]:focus{
+    width: 70%;
+    margin-right: 50px;
+    border: none;
+    border-bottom: 3px solid #50809d;
+}
+
+input[type=submit]{
+    border-radius: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 2px solid #50809d;
+    color: #50809d;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=submit]:hover{
+    background-color: #50809d;
+    color: white;
+}
+
+.ibutton{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.know-more-btn{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 5px 10px;
+    color: black !important;
+}
+
+.movie-title-name{
+    font-size: 20px;
+}
+
+.searchbox{
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.banner-photo-container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 85.7vh;
+    background: url('../assets//images/banner.jpg');
+}
+
+.banner-photo-warning{
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 85.7vh;
+    background: url('../assets//images/warning.png');
+}
