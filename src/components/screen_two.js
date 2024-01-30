@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Style.css';
+import BookingForm from './BookingForm'; // Import the BookingForm component
+import '../assets/Style(2).css';
 
 const ScreenTwo = () => {
     const [storedData, setStoredData] = useState(null);
@@ -24,12 +25,9 @@ const ScreenTwo = () => {
                         <p className="genres">Genres: {storedData.show.genres.join(', ')}</p>
                         <p className="language">Language: {storedData.show.language}</p>
                         <p className="summary"><b>Summary</b>: {storedData.show.summary}</p>
-                        
-                        {/* <p className="summary">{storedData.show.summary}</p> */}
                         <Link to="/BookTicket" className="button-link">
-    <button className="button">Book Tickets</button>
-</Link>
-
+                            <button className="button">Book Tickets</button>
+                        </Link>
                     </div>
                 </div>
             ) : (

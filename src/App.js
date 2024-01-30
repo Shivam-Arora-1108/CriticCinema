@@ -2,7 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ScreenOne from './components/screen_one';
 import ScreenTwo from './components/screen_two';
-import BookTicket from './components/bookticketForm';
+import BookTicket from './components/BookingForm';
+import SuccessPage from './SuccessPage';
 
 function App() {
   return (
