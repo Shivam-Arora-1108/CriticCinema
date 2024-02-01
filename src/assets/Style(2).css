@@ -41,8 +41,8 @@
 .genres {
   font-size: 18px;
   color: #555;
-  margin-bottom: 10px; /* Adjust as needed */
-  font-family: "Open Sans", sans-serif; /* Example font */
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .language {
