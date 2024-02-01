@@ -36,9 +36,9 @@ const ScreenOne = () => {
         });
     };
 
-      const handleKnowMoreClick = (dataItem) => {
-        // Convert the dataItem to a string and store it in localStorage
-        localStorage.setItem('dataItem', JSON.stringify(dataItem));
+    const handleKnowMoreClick = (dataItem) => {
+        window.sessionStorage.setItem('dataItem', JSON.stringify(dataItem));
+        window.sessionStorage.setItem('dataItems', JSON.stringify(dataItem));
         history('specificShowData');
     };
 
@@ -88,6 +88,6 @@ const ScreenOne = () => {
             </center>
         </div>
     );
-  };
-  
+};
+
 export default ScreenOne;

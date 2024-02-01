@@ -1,131 +1,152 @@
-/* style.css */
-
-/* Main container styles */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #C3DEEF;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #c3deef;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
-/* Content container */
 .content-container {
-    display: flex;
-    align-items: flex-start;
-    max-width: 800px;
+  display: flex;
+  align-items: flex-start;
+  max-width: 800px;
 }
 
-/* Image styles */
 .image {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-    animation: slideIn 1s ease-in-out;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto 50px auto 0;
+  animation: slideIn 1s ease-in-out;
 }
 
-/* Text container */
 .text-container {
-    flex: 1; /* Allow the text container to take up remaining space */
+  flex: 1;
 }
 
-/* Title styles */
 .title {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #000;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    animation: fadeIn 1s ease-in-out;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .genres {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 10px; /* Adjust as needed */
-    font-family: 'Open Sans', sans-serif; /* Example font */
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px; /* Adjust as needed */
+  font-family: "Open Sans", sans-serif; /* Example font */
 }
 
-.language{
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 10px; /* Adjust as needed */
-    font-family: 'Open Sans', sans-serif; /* Example font */
+.language {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px; 
+  font-family: "Open Sans", sans-serif;
 }
 
-
-/* Summary styles */
 .summary {
-    font-size: 18px;
-    color: #000;
-    line-height: 1.6;
-    text-align: justify;
-    font-family: 'Open Sans', sans-serif;
-    animation: scaleIn 1s ease-in-out;
-    margin-bottom: 20px; /* Adjust as needed */
+  font-size: 18px;
+  color: #000;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  animation: scaleIn 1s ease-in-out;
+  margin-bottom: 20px;
 }
 
-/* Button styles */
 
-/* Button styles */
 .button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 12px 24px; /* Increased padding for better button size */
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: none; /* Remove underline */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px; 
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
 }
 
 .button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-/* Additional styles specifically for the button inside the link */
 .button-link {
-    text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
+.booking-form {
+  margin-top: 50px;
+}
 
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
 
-/* Animations */
+.form-label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.form-input {
+  border: none;
+  background-color: #35a9f186;
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.submit-button {
+  background-color: rgb(255, 87, 87);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 320px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
