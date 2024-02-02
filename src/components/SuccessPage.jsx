@@ -1,5 +1,6 @@
 import React from 'react';
 import successImage from '../assets/images/booked.jpg';
+import '../assets/SuccessPage.css';
 
 const SuccessPage = () => {
     return (

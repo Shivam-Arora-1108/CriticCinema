@@ -1,0 +1,22 @@
+.success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.success-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.success-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .success-page h2 {
+    font-size: 20px;
+    }
+}
